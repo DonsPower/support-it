@@ -1,5 +1,5 @@
 <template>
-   <v-container>
+  <v-container>
     <v-toolbar
       dense
       floating
@@ -10,13 +10,13 @@
         single-line
         
       ></v-text-field>
-       
+      Buscar 
       <v-btn icon>
         <v-icon>mdi-crosshairs-gps</v-icon>
       </v-btn>
     </v-toolbar>
-    
-    <v-row justify="center" >
+    <v-row class="text-center">
+      
       <v-col cols="12">
         <v-img
           :src="require('../img/logo.jpg')"
@@ -26,8 +26,7 @@
         />
       </v-col>
 
-      <v-col class="mb-4 text-center">
-        
+      <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
           Control de Soporte Central
         </h1>
@@ -36,7 +35,6 @@
       </v-col>
 
     </v-row>
-
 <v-bottom-navigation
     :value="value"
     color="primary"
@@ -51,7 +49,7 @@
     </v-btn>
 
     <v-btn>
-      <span>Liquidaciones</span>
+      <span>Favorites</span>
 
       <v-icon>mdi-heart</v-icon>
     </v-btn>
@@ -61,46 +59,17 @@
 
       <v-icon>mdi-map-marker</v-icon>
     </v-btn>
-     <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-     <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-     <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-     <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-     <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-     <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
   </v-bottom-navigation>
   </v-container>
+    
 </template>
 
 <script>
-// @ is an alias to /src
+  export default {
+    name: 'Home',
 
-
-export default {
-  name: 'Home',
-  
-}
+    data: () => ({
+      value: 1
+    }),
+  }
 </script>
